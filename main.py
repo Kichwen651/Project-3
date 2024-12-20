@@ -226,7 +226,7 @@ def transaction_menu(connection):
             update_transaction(connection, transaction_id, service_id, amount, payment_status)
             clear_screen()
         elif choice == '4':
-            transaction_id = int(input("Enter transaction ID to delete: "))
+            transaction_id = int(input("Enter transaction ID : "))
             delete_transaction(connection, transaction_id)
             clear_screen()
         elif choice == '5':

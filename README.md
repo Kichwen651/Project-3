@@ -209,5 +209,8 @@ mysql -u root -p
 # Demonstrations
 For the slides one can access using the following link:
 https://docs.google.com/presentation/d/19PFdfAqOMR2zTPBptic8dSIjLq5UDhPUx5GmcqIyhIg/edit?usp=sharing
-
+For the github link one access in the following link:
+https://github.com/Kichwen651/Project-3
+For the Video link :
+https://www.loom.com/share/ecb9c71a9b074c769628f8c15e9d603b?sid=c10f052c-5898-46de-8d65-06065ae3eea1
 

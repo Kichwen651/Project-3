@@ -38,9 +38,10 @@ def update_transaction(connection, transaction_id, service_id, amount, payment_s
         print(f"Error: {e}")
         print("Please check if the column 'transaction_id' exists in the 'transactions' table.")
 
-# Function to delete a transaction
 def delete_transaction(connection, transaction_id):
     """Delete a transaction from the database."""
     with closing(connection.cursor()) as cursor:  # Automatically closes the cursor
-        cursor.execute("DELETE FROM transactions WHERE id = ?", (transaction_id,))
-        connection.commit()
+        # Make sure to use the correct column name `transaction_id` in the WHERE clause
+        cursor.execute("DELETE FROM transactions WHERE transaction_id = ?", (transaction_id,))
+        connection.commit()  # Commit the changes
+        print(f"Transaction with ID {transaction_id} has been deleted.")
